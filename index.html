@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
-<head>
-<title>Anton Saarenpää sivu</title>
-</head>
-<body>
-
-<h1>Tämä on minun Githubissa oleva sivu</h1>
-<p>Tässä on hiukan tekstiä</p>
-
-</body>
+	<head>
+		<title>Anton Saarenpää-sivu</title>
+	</head>
+	<body>
+		<div>
+			<h1>Tämä on käyttäjän ansacentria Github-sivu</h1>
+		</div>
+		<h1 id="clicked"><h1>
+		<a id="link" href="https://github.com/ansacentria/ansacentria.github.io" target="_blank">
+			<h2>Tästä linkistä pääset katsomaan lähde koodia</h2>
+		</a>
+	</body>
+	<script>
+		console.log(document.getElementById('link'));
+		document.getElementById('link').addEventListener('click', () => {
+			console.log('klikattu');
+			document.getElementById('clicked').innerHTML = "Kävit katsomassa sivuani! Kiitos tästä!";
+		});
+	</script>
 </html>
